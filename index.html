@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        body {
+            background-image: url("https://images.unsplash.com/photo-1694467666983-3fa4a29e7ecf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80");
+            background-size: cover;
+        }
+
+
+        /* * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .accordion {
+            width: 78px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .item {
+            width: 100%;
+            border: 1px solid #000;
+            border-radius: 18px;
+            padding: 20px;
+            height: 50px;
+            overflow: hidden;
+        }
+        .item .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .item .top button {
+            rotate: 90deg;
+            padding: 5px;
+        }
+
+        .active {
+            padding-bottom: 100px;
+            max-height: 500px;
+        } */
+
+        .lang {
+            margin-right: 45px;
+        }
+        button{
+            background: none;
+            border: 0;
+            font-size: 30px;
+        }
+        .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 10px;
+        }
+        header .right_side {
+            transition: 1s ease !important;
+        }
+        .line {
+            border-top: 1px solid black;
+        }
+        .modal_bg {
+            display: flex;
+            position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 150px;
+    overflow-y: scroll !important;
+            backdrop-filter: blur(10px);
+            display: none;
+        }
+        .left_right {
+            /* padding-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; */
+            display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 700;
+    color: rgb(37, 37, 76);
+    margin-bottom: 10px;
+    transition: 0.4s ease;
+        display: none;
+}
+
+.left a {
+    font-size: 30px;
+            padding-bottom: 10px;
+            text-decoration: none;
+            color: black;
+        }
+    .left_right .right a {
+        text-decoration: none;
+        font-size: 30px;
+        color: black;
+    }
+    .show {
+        display: block;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="hheader">
+        <div class="header">
+            <div class="left_side">
+                <nav class="lang">
+                    <div class="languages">
+                        <button>en</button>
+                        <button>ru</button>
+                        <button>uz</button>
+                    </div>
+                </nav>
+            </div>
+            <div class="right">
+                <button class="close">
+                    <img src="http://family.khm473.ru/assets/icons/x-circle.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="line"></div>
+        
+                <div class="modal_bg">
+                    <div class="left_right">
+                        <div class="left">
+                            <a href="familypark.uz@gmail.com">familypark.uz@gmail.com</a> <br>
+                            <a href="+998 94 440 44 40">+998 94 440 44 40</a> <br>
+                            <a href="">Узбекистан, г.Самарканд
+                                ул. Нарпайская 76а</a>
+                        </div>
+                        <div class="right">
+                            <a href="#">Lorem, ipsum.</a> <br>
+                            <a href="#">Lorem</a> <br>
+                            <a href="#">Lorem, ipsum dolor.</a> <br>
+                            <a href="#">Lorem, ipsum.</a> <br>
+                            <a href="#">Lorem, ipsum.</a> <br>
+                            <a href="#">Lorem, ipsum.</a> <br>
+                            <a href="#">Lorem, ipsum.</a> <br>
+                            <a href="#">Lorem, ipsum.</a> <br>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    <!-- <div class="accordian">
+        <div class="item">
+            <div class="top">
+                <span>question</span>
+                <button>></button>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum quae veritatis quas deleniti eveniet necessitatibus, nihil reprehenderit aliquid dicta libero assumenda. Recusandae odio neque ipsam, necessitatibus doloremque eius earum.
+            </p>
+
+        </div>
+
+        <div class="item">
+            <div class="top">
+                <span>question</span>
+                <button>></button>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum quae veritatis quas deleniti eveniet necessitatibus, nihil reprehenderit aliquid dicta libero assumenda. Recusandae odio neque ipsam, necessitatibus doloremque eius earum.
+            </p>
+
+        </div>
+
+        <div class="item">
+            <div class="top">
+                <span>question</span>
+                <button>></button>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum quae veritatis quas deleniti eveniet necessitatibus, nihil reprehenderit aliquid dicta libero assumenda. Recusandae odio neque ipsam, necessitatibus doloremque eius earum.
+            </p>
+
+        </div>
+
+
+    </div> -->
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
